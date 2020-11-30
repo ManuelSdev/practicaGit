@@ -20,11 +20,11 @@ No se generó ningún conflicto porque el archivo común a ambas ramas no tenía
 
 **¿Qué comando o comandos utilizaste en el paso 25?**
 Al principio de la práctica, cree el siguiente alias:
-git config alias.graph "log --graph --decorate --pretty=oneline"
+`git config alias.graph "log --graph --decorate --pretty=oneline"`
 De este modo, para dibujar el diagrama usé el siguiente comando:
 git graph
 
-** El merge del paso 26, ¿Podría ser fast forward? ¿Por qué?**
+**El merge del paso 26, ¿Podría ser fast forward? ¿Por qué?**
 Si, podría ser fas forwar porque, en el momento de hacer el merge, tltle solo tenía un commit por encima del último commit de master, es decir, formaban una lista.
 
 **¿Qué comando o comandos utilizaste en el paso 27?**
@@ -36,13 +36,13 @@ En primer lugar, hice git status para verificar la situación. A continuación, 
 **¿Qué comando o comandos utilizaste en el paso 29?**
 Utilicé el comando git branch -D title y comprobé que se había llevado a cabo listando las ramas con git branch
 
-** ¿Qué comando o comandos utilizaste en el paso 30?**
+**¿Qué comando o comandos utilizaste en el paso 30?**
 En primer lugar, usé git reflog para encontrar el identificador del commit del merge. Una vez localizado, usé el comando git reset –hard 5f2e0e8 para que, al rehacer el merge, tanto el working copy como el repositorio queden con los mismos archivos(el git nuestro recuperará el título)git ch
 
 **¿Qué comando o comandos usaste en el paso 32?**
 Usé git reflog para encontrar el identificador del primer commit y luego git checkout dba8f37
 
-**¿Qué comando o comandos usaste en el punto 33? 5f2e0e8**
+**¿Qué comando o comandos usaste en el punto 33?**
 Usé git reflog para encontrar el identificador del merge de title en master y luego git checkout 5f2e0e8.
 
 
